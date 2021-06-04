@@ -1,0 +1,409 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.splash {
+
+position:fixed;
+top:0;
+left:0;
+width:100%
+height:100vh;
+background:black;
+z-index:200;
+line-height:90vh;
+}
+
+.splash.display-none {
+
+position:fixed;
+top:0;
+opacity:0;
+left:0;
+width:100%
+height:100vh;
+background:black;
+z-index:-10;
+line-height:90vh;
+transition: all 0.1s;
+}
+
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	
+	}
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.0s ease-in forwards;
+  
+  
+  
+}
+
+
+h1 {
+	font-family: 'Michroma'; font-size: 30px;
+	color:white;
+	align-items: center;
+	
+	}
+
+
+#section1 {
+
+}
+
+#section2 {
+
+ 
+}
+#section3 {
+
+ 
+}
+#section4 {
+
+ 
+}
+
+#section5 {
+
+ 
+}
+
+
+
+#mySidenav a {
+  position: absolute;
+  left: 0px;
+
+  transition: 0.3s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 15px;
+font-family: 'Michroma';
+  color: blue;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+
+  #video{
+  position:center;
+
+  
+  }
+  
+}
+#mySidenav a:hover {
+  left: 0;
+ 
+  color:white;
+}
+
+
+#a1 {
+  top: 20px;
+ 
+}
+
+#a2{
+  top: 80px;
+
+}
+
+#a3  {
+  top: 140px;
+  
+}
+
+#blog {
+  top: 200px;
+  background-color:white
+}
+canvas {
+  vertical-align: top;
+  z-index: -1
+  
+}
+
+#BodyWrapper{
+position:absolute; 
+top:0; left:0; 
+width:100%; 
+height:40%; 
+z-index:5;
+ 
+
+}
+
+div:nth-child(0){
+
+
+	background-size: cover;
+	text-transform:uppercase;
+background-attachment: fixed;
+;
+}
+
+
+
+div:nth-child(1){
+background-image:transparent;
+	background-color:tranparent;
+	
+	background-size: cover;
+
+	
+
+}
+
+div:nth-child(2){
+
+	
+}
+
+div:nth-child(3){
+
+
+
+
+}
+
+div:nth-child(4){
+background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+
+}
+
+
+
+div:nth-child(5){
+
+	background-image: url("img/space.png");
+	background-attachment: fixed;
+	background-size: cover;
+}
+div:nth-child(6){
+
+	margin:0px;
+	padding:0px;
+}
+
+div:nth-child(7){
+height: 0vh;
+margin:0px;
+	padding:0px;
+
+}
+
+
+body:before
+{
+	content:''
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%
+	height: 100%
+	background:linear-gradient(0deg,#000 0%, #000 50%, #fff 50%, #fff 100%,)
+}
+
+div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:100%;
+	height: 100vh;
+	
+	
+}
+
+
+
+h2 {
+	
+	font-family: 'Michroma'; font-size: 50px;
+	color:white;
+	font-weight:bold;
+	align-items: center;
+
+	
+	}
+
+
+
+
+	
+	
+	h3 {
+	font-family: 'Michroma'; font-size: 18px;
+	color:black;
+	align-items: center;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-size 12em;
+	letter-spacing:3px;
+	mix-blend-mode:difference;
+	color:#fff;
+	transform-orgin:center;
+	animation: animate 10s linear infinite;
+	
+}
+
+@keyframes animate 
+{
+
+	0%
+	{
+		transform:translateY(0px) rotate(-10deg);
+	}
+	25%
+	{
+		transform:translateY(-100px) rotate(-10deg);
+	}
+	50%
+	{
+		transform:translateY(0px) rotate(10deg);
+	}
+	75%
+	{
+		transform:translateY(100px) rotate(10deg);
+	}
+	100%
+	{
+		transform:translateY(0px) rotate(-10deg);
+	}
+}	
+
+	
+
+p {
+  font-family: Roboto;
+  font-size: 16px;
+  align-items:center;
+  color:white;
+}
+/* Buttons */
+
+a:link, a:visited {
+  background-color: white;
+  color: blue;
+  padding: 14px 25px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+ font-family: 'Poppins', sans-serif;
+ border: 0;
+}
+
+a:hover, a:active {
+color:white;
+background-color: #21d190;
+background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%);
+}
+
+
+.fadeIn {
+  opacity: 30;
+  animation: fadeIn 7.0s forwards;
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+ 
+ /*#navbar {
+  background-color: black; /* Black background color 
+  position: fixed;  Make it stick/fixed 
+  top: -50px; /* Hide the navbar 50 px outside of the top view 
+  width: 100%;  Full width 
+  transition: top 0.3s; /* Transition effect when sliding down (and up) 
+ 
+ 
+}
+
+/*
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+ 
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 52.5%; /* 16:9 Aspect Ratio 
+}
+*/
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.container2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+
+.responsive-iframe2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+ 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+
+ 
+/*body 
+
+{
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center; 
+	background:linear-gradient(0deg,#000 0%, #000 50%, #fff 50%, #fff 100%,)
+	
+}*/
+
+
